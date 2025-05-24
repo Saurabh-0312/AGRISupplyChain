@@ -1,0 +1,70 @@
+.owner-dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-card {
+  background: #fff;
+  padding: 32px 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+
+.dashboard-card h2 {
+  margin-bottom: 24px;
+  font-size: 28px;
+  color: #333;
+}
+
+.inspector-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inspector-form label {
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+}
+
+.inspector-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.inspector-form input:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+.inspector-form button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #4f46e5;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inspector-form button:hover:not(:disabled) {
+  background-color: #3730a3;
+}
+
+.inspector-form button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}

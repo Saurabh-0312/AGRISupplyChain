@@ -1,0 +1,285 @@
+/* ConsumerDashboard.css */
+.consumer-dashboard {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.consumer-dashboard .dashboard-header {
+  background: linear-gradient(135deg, #805ad5 0%, #9f7aea 100%);
+}
+
+.marketplace-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+}
+
+.filter-select,
+.sort-select {
+  padding: 10px 15px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  background: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.filter-select:focus,
+.sort-select:focus {
+  outline: none;
+  border-color: #805ad5;
+}
+
+.marketplace-stats {
+  color: #4a5568;
+  font-weight: 600;
+}
+
+.marketplace-section {
+  padding: 30px;
+}
+
+.crops-marketplace {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 25px;
+}
+
+.crop-marketplace-card {
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.crop-marketplace-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: #805ad5;
+}
+
+.crop-image-placeholder {
+  height: 200px;
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.crop-image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a0aec0;
+  font-size: 3rem;
+}
+
+.crop-info {
+  padding: 25px;
+}
+
+.crop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.crop-header h4 {
+  color: #2d3748;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.grade-badge {
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.grade-badge.grade-a {
+  background: #c6f6d5;
+  color: #2f855a;
+}
+
+.grade-badge.grade-b {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.grade-badge.grade-c {
+  background: #fef5e7;
+  color: #d69e2e;
+}
+
+.crop-type {
+  color: #805ad5;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.crop-details {
+  margin-bottom: 15px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 5px 0;
+}
+
+.detail-row.total-price {
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  margin: 10px 0;
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+.label {
+  color: #4a5568;
+}
+
+.value {
+  color: #2d3748;
+  font-weight: 500;
+}
+
+.value.price {
+  color: #805ad5;
+  font-weight: 600;
+}
+
+.value.total {
+  color: #2d3748;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.value.farmer {
+  font-family: 'Courier New', monospace;
+  background: #f7fafc;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.crop-chemicals {
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.chemical-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.chemical-label {
+  color: #718096;
+}
+
+.chemical-value {
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.crop-actions {
+  padding: 20px 25px;
+  background: #f8f9fa;
+  border-top: 1px solid #e2e8f0;
+}
+
+.buy-btn {
+  background: linear-gradient(135deg, #805ad5 0%, #9f7aea 100%);
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.buy-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(128, 90, 213, 0.4);
+}
+
+.buy-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.crop-verification {
+  text-align: center;
+}
+
+.verified-badge {
+  color: #38a169;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.marketplace-info {
+  padding: 30px;
+  background: #f8f9fa;
+  border-top: 1px solid #e2e8f0;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.info-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.info-card h4 {
+  color: #2d3748;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.info-card p {
+  color: #4a5568;
+  line-height: 1.6;
+}
