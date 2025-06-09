@@ -252,41 +252,6 @@ struct CropDetails {
 - [ ] **Batch Processing**: Bulk crop upload for large-scale farmers
 - [ ] **Insurance Integration**: Crop insurance based on blockchain verified data
 
-## 🤝 Contributing
-
-We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting pull requests.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Team
-
-- **Lead Developer**: [Your Name]
-- **Blockchain Developer**: [Team Member]
-- **Frontend Developer**: [Team Member]
-
-## 📞 Contact
-
-- **Project Link**: [https://github.com/yourusername/AGRISupplyChain](https://github.com/yourusername/AGRISupplyChain)
-- **Email**: your.email@example.com
-- **LinkedIn**: [Your LinkedIn Profile]
-
-## 🙏 Acknowledgments
-
-- Ethereum Foundation for blockchain infrastructure
-- OpenZeppelin for secure smart contract libraries
-- MetaMask for wallet integration
-- The amazing open-source community
-
----
-
 **Made with ❤️ for sustainable agriculture and blockchain innovation**
 
 *Building the future of food supply chain, one block at a time.*
